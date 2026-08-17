@@ -81,10 +81,13 @@ function addToHistory(phone, role, content) {
 export default async function handler(req, res) {
 
   // CRITICAL: Twilio needs 200 OK fast or it retries and sends double messages
-  if (req.method !== 'POST') {
-    return res.status(405).send('Method not allowed');
-  }
+  if (req.method === 'GET') {
+    return res.status(200).send('Webhook active');
+}
 
+if (req.method !== 'POST') {
+    return res.status(405).send('Method not allowed');
+}
   // Extract message and sender from Twilio's POST body
   const userMessage = req.body.Body?.trim();
   const fromNumber  = req.body.From; // format: "whatsapp:+919840012345"
