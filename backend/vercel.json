@@ -7,8 +7,20 @@
   },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "src": "/api/health",
+      "dest": "/api/health.js"
+    },
+    {
+      "src": "/api/chat",
+      "dest": "/api/chat.js"
+    },
+    {
+      "src": "/api/lead",
+      "dest": "/api/lead.js"
+    },
+    {
+      "src": "/api/whatsapp",
+      "dest": "/api/whatsapp.js"
     }
   ]
 }
