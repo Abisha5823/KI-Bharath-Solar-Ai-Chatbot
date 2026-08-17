@@ -1,0 +1,17 @@
+# Environment files - never push these
+.env
+.env.local
+backend/.env
+frontend/.env
+
+# Dependencies - never push these
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Vercel
+.vercel
+
+# OS files
+.DS_Store
+Thumbs.db
