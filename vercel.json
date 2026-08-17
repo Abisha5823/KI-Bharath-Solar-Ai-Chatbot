@@ -1,26 +1,26 @@
 {
   "version": 2,
   "functions": {
-    "api/*.js": {
+    "backend/api/*.js": {
       "maxDuration": 30
     }
   },
   "routes": [
     {
       "src": "/api/health",
-      "dest": "/api/health.js"
+      "dest": "/backend/api/health.js"
     },
     {
       "src": "/api/chat",
-      "dest": "/api/chat.js"
+      "dest": "/backend/api/chat.js"
     },
     {
       "src": "/api/lead",
-      "dest": "/api/lead.js"
+      "dest": "/backend/api/lead.js"
     },
     {
       "src": "/api/whatsapp",
-      "dest": "/api/whatsapp.js"
+      "dest": "/backend/api/whatsapp.js"
     }
   ]
 }
